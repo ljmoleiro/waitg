@@ -27,6 +27,7 @@ coverage
 .idea/tasks.xml
 .idea/dictionaries
 .idea/vcs.xml
+/bower_components
 .idea/jsLibraryMappings.xml
 
 # Sensitive or high-churn files:
