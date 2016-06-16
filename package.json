@@ -12,7 +12,11 @@
     "e": "0.0.4",
     "express": "4.13.4",
     "jade": "~1.11.0",
+    "mongoose": "4.5.0",
     "morgan": "~1.6.1",
+    "passport": "0.3.2",
+    "passport-facebook": "2.1.1",
+    "passport-google-oauth2": "0.1.6",
     "serve-favicon": "~2.3.0"
   }
 }
