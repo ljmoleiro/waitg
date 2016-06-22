@@ -5,7 +5,9 @@ var express = require('express'),
     logger = require('morgan'),
     cookieParser = require('cookie-parser'),
     bodyParser = require('body-parser'),
-    mongoose = require('mongoose');
+    mongoose = require('mongoose'),
+    session = require('express-session'),
+    mongoStore = require('connect-mongo')(session);
 
 
 var routes = require('./routes/index');
