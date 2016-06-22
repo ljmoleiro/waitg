@@ -40,6 +40,22 @@ app.use(function(req, res, next) {
     next(err);
 });
 
+/**
+ * Configurations for sessions
+ */
+var mongoStoreConfig = new mongoStore({
+    mongooseConnection: mongoose.connection,
+    ttl: 7 * 24 * 60 * 60 * 1000 // = 7 days.
+});
+app.use(session({
+    key: 'waitg.session',
+    secret: process.env.WAITG_EXPRESS_SESSION_KEY,
+    cookie: {maxAge: 7 * 24 * 60 * 60 * 1000},
+    resave: false,
+    saveUninitialized: true,
+    store: mongoStoreConfig
+}));
+
 // error handlers
 
 // development error handler
