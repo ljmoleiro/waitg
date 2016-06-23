@@ -30,6 +30,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', routes);
 app.use('/users', users);
 
+require('./app/passport')(app);
+
 /**
  * Connection for mongoose by ljmoleiro
  */
