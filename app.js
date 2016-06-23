@@ -31,7 +31,7 @@ app.use('/', routes);
 app.use('/users', users);
 
 /**
- * Connection for mongoose
+ * Connection for mongoose by ljmoleiro
  */
 mongoose.connect(process.env.DATABASE_URL);
 
